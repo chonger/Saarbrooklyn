@@ -1,0 +1,38 @@
+<game>
+  <gamestate>
+    <invs>
+      <inv>fünf Euro,things/5euros.png</inv>
+      <inv>zehn Euro,things/10euros.png</inv>
+      <inv>zwanzig Euro,things/20euros.png</inv>
+      <inv>ein Hamburger,things/hamburger.png</inv>
+      <inv>ein Hamburger,things/hamburger.png</inv>
+      <inv>ein Zettel,things/note.png</inv>
+      <inv>Einen Kebab,things/kebab.png</inv>
+    </invs>
+    <gstates>
+      <gs>GOTKEBAB</gs>
+    </gstates>
+
+    <combs>
+    </combs>
+    
+    <scenes>
+      <scene>
+        <name>HauptBahnhof</name>
+        <xml>data/scenes/HauptBahnhof.xml</xml>
+      </scene>
+      <scene>
+        <name>JKircheGarden</name>
+        <xml>data/scenes/JkircheGarden.xml</xml>
+      </scene>
+      <scene>
+        <name>Rigatoni</name>
+        <xml>data/scenes/Rigatoni.xml</xml>
+      </scene>
+    </scenes>
+    
+    <firstScene>JKircheGarden</firstScene>
+    <startItems>ein Zettel,Einen Kebab</startItems>
+    
+  </gamestate>
+</game>

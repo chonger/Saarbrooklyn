@@ -1,0 +1,41 @@
+<scene>
+    <behindImg>backgrounds/JKircheGarden.png</behindImg>
+    <infrontImg></infrontImg>
+    <boundaries></boundaries>
+    <perspect></perspect>
+    <scenejumps></scenejumps>
+    <npcs><npc>
+    <name>Megaman</name>
+    <desc>Ein blauen mann</desc>
+    <conditions></conditions>
+    <initI>0</initI>
+    <x>572.0</x><y>247.0</y>
+    <w>80.0</w><h>112.0</h>
+    <cw>80.0</cw><ch>20.0</ch>
+    <ox>0.0</ox><oy>50.0</oy>
+    <tx>-82.0</tx><ty>12.0</ty>
+    <tf>2</tf>
+    <imgs><img>mmstandL.png</img><img>mmtalk.gif</img></imgs>
+    <triggers><trigger>
+            <key>Rede mit</key>
+            <conditions></conditions>
+            <action>1</action>
+            </trigger><trigger>
+            <key>Gib,Einen Kebab</key>
+            <conditions></conditions>
+            <action>0</action>
+            </trigger></triggers>
+    <actions><action>
+    <say>THANKS!</say>
+    
+    <animation></animation>
+    <responses></responses>
+    </action><action>
+    <say>Joo...</say>
+    
+    <animation><anim ind="1" dur="2.0"></anim></animation>
+    <responses></responses>
+    </action></actions>
+    </npc></npcs>
+    
+    </scene>

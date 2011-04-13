@@ -1,0 +1,92 @@
+<scene>
+    <behindImg>backgrounds/Hauptbahnhof.png</behindImg>
+    <infrontImg></infrontImg>
+    <boundaries><boundary shape="box">460.0,220.0,204.0,28.0</boundary><boundary shape="circle">85.0,135.0,224.55511</boundary><boundary shape="circle">302.0,133.0,113.87713</boundary><boundary shape="circle">591.0,168.0,78.10249</boundary><boundary shape="circle">766.0,214.0,150.69505</boundary></boundaries>
+    <perspect><pt>412.0,337.0,2.0</pt><pt>416.0,137.0,0.3</pt></perspect>
+    <scenejumps><scenejump>
+      <dim>400.0,350.0,600.0,30.0</dim>
+      <dest>400.0,370.0</dest>
+      <arriveS>101.0,86.0</arriveS>
+      <arriveE>137.0,137.0</arriveE>
+      <target>Rigatoni</target>
+      </scenejump></scenejumps>
+    <npcs><npc>
+    <name>Geldautomat</name>
+    <desc>Ein Geldautomat</desc>
+    <conditions></conditions>
+    <initI>0</initI>
+    <x>196.0</x><y>247.0</y>
+    <w>80.0</w><h>112.0</h>
+    <cw>80.0</cw><ch>20.0</ch>
+    <ox>0.0</ox><oy>50.0</oy>
+    <tx>74.0</tx><ty>54.0</ty>
+    <tf>3</tf>
+    <imgs><img>HBF/ATM.png</img><img>HBF/ATMwork.gif</img></imgs>
+    <triggers><trigger>
+            <key>Benutze</key>
+            <conditions><condition>NASGS,USEDATM</condition></conditions>
+            <action>0</action>
+            </trigger><trigger>
+            <key>Benutze</key>
+            <conditions><condition>HASGS,USEDATM</condition></conditions>
+            <action>1</action>
+            </trigger></triggers>
+    <actions><action>
+    <say>ratter .. ratter .. ratter</say>
+    <effect>ADDI,fünf Euro</effect><effect>ADDI,zehn Euro</effect><effect>ADDI,zwanzig Euro</effect><effect>ADDS,USEDATM</effect>
+    <animation><anim ind="1" dur="2"/></animation>
+    <responses></responses>
+    </action><action>
+    <say>Kein geld...</say>
+    
+    <animation></animation>
+    <responses></responses>
+    </action></actions>
+    </npc><npc>
+    <name>Mc Donners</name>
+    <desc>A Popular Fast food chain</desc>
+    <conditions></conditions>
+    <initI>0</initI>
+    <x>655.0</x><y>246.0</y>
+    <w>40.0</w><h>58.0</h>
+    <cw>40.0</cw><ch>18.0</ch>
+    <ox>0.0</ox><oy>30.0</oy>
+    <tx>-73.0</tx><ty>48.0</ty>
+    <tf>2</tf>
+    <imgs><img>HBF/MCDonners.png</img></imgs>
+    <triggers><trigger>
+            <key>Rede mit</key>
+            <conditions></conditions>
+            <action>2</action>
+            </trigger><trigger>
+            <key>Gib,fünf Euro</key>
+            <conditions></conditions>
+            <action>0</action>
+            </trigger></triggers>
+    <actions><action>
+    <say>This is not enough, it was 6</say>
+    
+    <animation></animation>
+    <responses></responses>
+    </action><action>
+    <say>That will be six euros</say>
+    
+    <animation></animation>
+    <responses></responses>
+    </action><action>
+    <say>Guten Tag, wie kann ich ihnen helfen?</say>
+    
+    <animation></animation>
+    <responses><response>
+        <s>AAh vergiss es</s>
+        <conditions></conditions>
+        <index>-1</index>
+        </response><response>
+        <s>I want a hamburger</s>
+        <conditions></conditions>
+        <index>1</index>
+        </response></responses>
+    </action></actions>
+    </npc></npcs>
+    
+    </scene>

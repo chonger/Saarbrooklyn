@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+	        <!-- charset must remain utf-8 to be handled properly by Processing -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
+		<title>saarbrooklyn.Saarbrooklyn : Built with Processing</title>
+		
+		<style type="text/css">
+		/* <![CDATA[ */
+	
+		body {
+  		  margin: 60px 0px 0px 55px;
+		  font-family: verdana, geneva, arial, helvetica, sans-serif; 
+		  font-size: 11px; 
+		  background-color: #ddddcc; 
+		  text-decoration: none; 
+		  font-weight: normal; 
+		  line-height: normal; 
+		}
+		 
+		a          { color: #3399cc; }
+		a:link     { color: #3399cc; text-decoration: underline; }
+		a:visited  { color: #3399cc; text-decoration: underline; }
+		a:active   { color: #3399cc; text-decoration: underline; }
+		a:hover    { color: #3399cc; text-decoration: underline; }
+	
+		/* ]]> */
+		</style>
+	 
+	</head>
+	<body>
+		<div id="content">
+			<div id="saarbrooklyn.Saarbrooklyn_container">
+			
+			<!--[if !IE]> -->
+				<object classid="java:saarbrooklyn.Saarbrooklyn.class" 
+            			type="application/x-java-applet"
+            			archive="Saarbrooklyn.jar"
+            			width="800" height="500"
+            			standby="Loading Processing software..." >
+            			
+					<param name="archive" value="Saarbrooklyn.jar" />
+				
+					<param name="mayscript" value="true" />
+					<param name="scriptable" value="true" />
+				
+					<param name="image" value="loading.gif" />
+					<param name="boxmessage" value="Loading Processing software..." />
+					<param name="boxbgcolor" value="#FFFFFF" />
+				
+					<param name="test_string" value="outer" />
+			<!--<![endif]-->
+				
+				<object classid="clsid:CAFEEFAC-0016-0000-FFFF-ABCDEFFEDCBA" 
+						codebase="http://java.sun.com/update/1.5.0/jinstall-1_5_0_15-windows-i586.cab"
+						width="800" height="500"
+						standby="Loading Processing software..."  >
+						
+					<param name="code" value="saarbrooklyn.Saarbrooklyn" />
+					<param name="archive" value="Saarbrooklyn.jar" />
+					
+					<param name="mayscript" value="true" />
+					<param name="scriptable" value="true" />
+					
+					<param name="image" value="loading.gif" />
+					<param name="boxmessage" value="Loading Processing software..." />
+					<param name="boxbgcolor" value="#FFFFFF" />
+					
+					<param name="test_string" value="inner" />
+					
+					<p>
+						<strong>
+							This browser does not have a Java Plug-in.
+							<br />
+							<a href="http://www.java.com/getjava" title="Download Java Plug-in">
+								Get the latest Java Plug-in here.
+							</a>
+						</strong>
+					</p>
+				
+				</object>
+				
+			<!--[if !IE]> -->
+				</object>
+			<!--<![endif]-->
+			
+			</div>
+			
+			<p>
+			TODO
+
+Conditions on responses
+moving between screens
+animation sequences
+dialog graph
+
+
+@author chonger
+
+	 * Boundary Editor variables
+	 * 
+	 * Game mode variables
+	 * 
+	 * Dialog Editor variables
+	 * 
+	 * These values are updated with each draw to detect hovering.  null means no hover.
+	 * Static internal game strings
+	 * 
+	 * Made for German version.
+	 * 
+	 * Help menus
+	 * 
+	 * 4 Game modes - game, boundary, perspective, and dialog editor
+	 *
+	 * Check existence conditions for each npc and regenerate the list
+	 * 
+	 * this should be called whenever the game state changes
+	 * 
+	 * Load a scene.  The destination of the player should be set
+	 * by the setup or else by the screen we're coming from.  
+	 * The scene jumps are setup as soon as the player reaches his first 
+	 * destination.
+	 * 
+	 * @param sc
+	 * Set a new image for the current NPC, and loop its gif if it is a gif
+	 * 
+	 * @param index
+	 * Should get called with an action command that is complete
+	 * 
+	 * 
+	 * @param npc
+	 * @param trigger
+					stroke(0);
+					strokeWeight(1);
+					textFont(type20);
+					textAlign(CENTER);
+					text(gameState.getInv(i),mx + invw/6,my + invh/10 + 6);
+
+			</p>
+			
+			<p>
+			Source code: <a href="FadeNote.java">FadeNote.java</a> <a href="NonPlayer.java">NonPlayer.java</a> <a href="Conversation.java">Conversation.java</a> <a href="Player.java">Player.java</a> <a href="SBDialogGraph.java">SBDialogGraph.java</a> <a href="SBDialogNode.java">SBDialogNode.java</a> <a href="Saarbrooklyn.java">Saarbrooklyn.java</a> 
+			</p>
+			
+			<p>
+			Built with <a href="http://processing.org" title="Processing.org">Processing</a>
+			</p>
+		</div>
+	</body>
+</html>
